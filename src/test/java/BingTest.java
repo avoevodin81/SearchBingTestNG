@@ -119,7 +119,6 @@ public class BingTest {
         });
         log("check that the enlarged image and its elements are shown");
         //check that the enlarged image is shown
-        //System.out.println(driver.findElement(By.xpath("//spsan//*[@class='fav_active active_line']")).isDisplayed());
         Assert.assertTrue(driver.findElements(bigImage).size() == 1, "The enlarged image is not displayed!");
         //check the "Add to collection" element
         Assert.assertTrue(driver.findElements(By.xpath("//span//*[@class='fav_active active_line']")).size() > 0, "The 'Add to collection' element is not displayed!");
