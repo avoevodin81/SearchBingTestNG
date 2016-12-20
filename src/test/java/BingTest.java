@@ -147,6 +147,7 @@ public class BingTest {
 
         log("click the 'Other images' text link");
         By otherImagesButton = By.xpath("//div[@class ='expandButton clickable active']/span");
+        wait.until(ExpectedConditions.presenceOfElementLocated(otherImagesButton));
         WebElement clickOtherImages = driver.findElement(otherImagesButton);
         clickOtherImages.click();
 
