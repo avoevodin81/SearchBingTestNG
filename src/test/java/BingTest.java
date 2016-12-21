@@ -19,10 +19,10 @@ import java.util.List;
 import java.util.Scanner;
 
 public class BingTest {
-    EventFiringWebDriver driver;
-    JavascriptExecutor jse;
-    WebDriverWait wait;
-    Actions builder;
+    static EventFiringWebDriver driver;
+    static JavascriptExecutor jse;
+    static WebDriverWait wait;
+    static Actions builder;
 
     @BeforeTest
     public void setup() {
